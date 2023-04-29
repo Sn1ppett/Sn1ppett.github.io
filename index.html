@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Marc Portfolio</title>
+        <link href="" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="banner-text">
+            <ul>
+                <li><a download="CV_MarcOlivaresLópez.pdf" href="CV_MarcOlivaresLópez.pdf">Descargar CV</a></li>
+
+
+            </ul>
+            <h2><span id="typing-effect"></span><span class="cursor">_</span></h2>
+            <section id="about-me">
+                    <p>En mi currículum vitae, encontrarás un resumen detallado de mis habilidades, competencias,
+                        estudios y experiencia laboral. </p>
+                    <p>Si tienes alguna pregunta o estás interesado en conocer más sobre mis habilidades y experiencia,
+                        no dudes en contactarme. Estoy deseando hablar contigo.</p>
+                    <p><a href="#about-me">molivareslopez03@gmail.com</a>
+                    </p>
+                </section>
+
+        </div>
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        const typingElement = document.getElementById("typing-effect");
+
+        const name = "Marc Olivares López";
+
+        const typingSpeed = 160;
+
+        let index = 0;
+
+        function type() {
+            if (index < name.length) {
+                typingElement.textContent += name.charAt(index);
+                index++;
+                setTimeout(type, typingSpeed);
+            }
+        }
+
+        type();
+    </script>
+
+
+
+    </html>
